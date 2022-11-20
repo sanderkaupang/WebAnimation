@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    display: grid;
+    display: grid; /* meking the view a grid */
     place-items: center; /* center items/ pics */
     align-content: center; /* center content */
     min-height: 100vh;  /* How far apart heading are */
