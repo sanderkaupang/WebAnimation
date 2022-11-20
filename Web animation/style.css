@@ -1,0 +1,48 @@
+@import url('https://fonts.google.com/share?selection.family=Arimo:ital@1');
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center; /* center items/ pics */
+    align-content: center; /* center content */
+    min-height: 100vh;  /* How far apart heading are */
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform:  translateX(-100%);
+    transition: all 2s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){ 
+    transition-delay: 400ms;
+}
+
+
+.logo{
+    background-color: #131316;
+    border-radius:20px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
